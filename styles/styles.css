@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,8 +33,8 @@
  
 .nav-box{
     display: inline-block;
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 60px;
     background-color: #cec6c6;
     padding: 10px;
     color: #fff;
@@ -91,4 +92,8 @@ input[type=text], input[type=email] {
 
 th{
   background-color: #279971;
+}
+
+table,td {
+	border: 1px solid black;
 }
