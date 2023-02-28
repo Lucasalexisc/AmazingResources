@@ -43,25 +43,21 @@
     font-weight: bold;
   }
 
-   /* Center the caption text */
+  
    .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
 }
-/* Change the color of the caption text */
+
 .carousel-caption h5,
 .carousel-caption p {
     color: #fff;
 }
-/* Make the carousel occupy the entire width of the screen */
+
 .carousel {
     width: 100%;
-    height: fit-content; /* Set the height as per your requirement */
+    height: fit-content; 
 }
-
-/* .carousel-inner{
-  background-color: grey;
-} */
 
 .carousel-slide{
   height: fit-content;
@@ -80,7 +76,7 @@
   background-color: #279971;
 }
 
-/* Full-width input fields */
+
 input[type=text], input[type=email] {
   width: 100%;
   padding: 15px;
