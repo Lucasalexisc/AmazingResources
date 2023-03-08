@@ -1,182 +1,137 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <title>Amazing Events</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-  />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stats</title>
+  </head>
+  <body>
+    <header class="nav-header" >
+      <figure class="figure-logo">
+        <a href="./index.html"> <img src="./img/Logo_AZ.jpg" class="logo" alt="logo amazing events"> </a>
+      </figure>
 
-<body>
-    <!-- Navbar -->
-    <header>
-        <div>
-            <nav class="navbar">
-                <a href="./index.html" class="logo"><img src="./img/Logo Amazing Events.png" alt="Logo"></a>
-                <ul class="nav-links">
-                    <li><a href="./index.html" class="nav-box">Home</a></li>
-                    <li><a href="./upcomingevents.html" class="nav-box">Upcoming Events</a></li>
-                    <li><a href="./pastevents.html" class="nav-box">Past Events</a></li>
-                    <li><a href="./contact.html" class="nav-box">Contact</a></li>
-                    <li><a href="#" class="nav-box">Stats</a></li>
-                </ul>
-            </nav>
+      <nav class="web-nav">
+        <a href="./index.html" class="nav-button">Home</a>
+        <a href="./future-events.html" class="nav-button">Future events</a>
+        <a href="./past-events.html" class="nav-button">Past Events</a>
+        <a href="./contact.html" class="nav-button">Contact</a>
+        <a href="#" class="nav-button">Stats</a>
+      </nav>
+
+      <div class="container-menu">
+        <div class="menu-sign">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-    </header>
-    <main>
-        
-        <div id="carouselExampleIndicators" class="carousel slide py-3 mx-2 shadow rounded bg-light" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#" class="carouselItem">
-                  <h3 class="text-center">Stats</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./upcomingevents.html" class="carouselItem">
-                  <h3 class="text-center">Upcoming Events</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./index.html" class="carouselItem">
-                  <h3 class="text-center">Home</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./contact.html" class="carouselItem">
-                  <h3 class="text-center">Contact Us</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./pastevents.html" class="carouselItem">
-                  <h3 class="text-center">Past Events</h3>
-                </a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
-          <main class="my-4 py-2 mx-2 px-2 d-flex flex-column shadow">
-            <table class="amazeTable mx-2">
-              <thead>
-                <tr>
-                  <th colspan="3">Events Statistics</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Events with the highest percentage of attendance</td>
-                  <td>Events with the lowest percentage of attendance</td>
-                  <td>Event with larger capacity</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="amazeTable mx-2 my-4">
-              <thead>
-                <tr>
-                  <th colspan="3">Upcoming events Statistics by category</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Categories</td>
-                  <td>Revenues</td>
-                  <td>Percentage of attendance</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="amazeTable mx-2 my-4">
-              <thead>
-                <tr>
-                  <th colspan="3">Past events Statistic by category</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Categories</td>
-                  <td>Revenues</td>
-                  <td>Percentage of attendance</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </main>
-        <footer>
-            <div class="foot">
-              <img src="./img/pngwing.com (2).png" alt="" height="50px" width="50px" HSPACE="20" VSPACE="20">
-              <img src="./img/pngwing.com (3).png" alt="" height="50px" width="50px" HSPACE="20" VSPACE="20">
-              <img src="./img/pngwing.com (4).png" alt="" height="50px" width="50px" HSPACE="20" VSPACE="20">
-            </div>
-          </footer>
-          <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"
-        ></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="./future-events.html">Future Events</a>
+          <a href="./past-events.html">Past Events</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./stats.html">Stats</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <header class="header-home">
+          <div class="next-prev-symbol"><a class="header-home-link" href="./contact.html">&lt;</a></div> 
+          <h1>Stats</h1>
+          <div class="next-prev-symbol"><a class="header-home-link" href="./index.html">&gt;</a></div> 
+        </header>
+
+        <div class="stats-table">
+          <table>
+            <tr>
+              <th colspan="3">Events statistic</th>
+            </tr>
+
+            <tbody>
+              <tr>
+                <td>Events with highest percentage of attendance</td>
+                <td>Events with highest percentage of attendance</td>
+                <td>Events with highest percentage of attendance</td>
+              </tr>
+
+              <tr>
+                <td>Events with highest percentage of attendance</td>
+                <td>Events with highest percentage of attendance</td>
+                <td>Events with highest percentage of attendance</td>
+              </tr>
+            </tbody>
+
+            <tr>
+              <th colspan="3">Upcoming events statistic by category</th>
+            </tr>
+
+            <tbody>
+              <tr>
+                <td>Categories</td>
+                <td>Revenues</td>
+                <td>Percentage of attendance</td>
+              </tr>
+
+              <tr>
+                <td>Categories</td>
+                <td>Revenues</td>
+                <td>Percentage of attendance</td>
+              </tr>
+
+              <tr>
+                <td>Categories</td>
+                <td>Revenues</td>
+                <td>Percentage of attendance</td>
+              </tr>
+            </tbody>
+
+            <tr>
+              <th colspan="3">Past events statistic by category</th>
+            </tr>
+
+            <tbody>
+              <tr>
+                <td>Categories</td>
+                <td>Revenues</td>
+                <td>Percentage of attendance</td>
+              </tr>
+
+              <tr>
+                <td>Categories</td>
+                <td>Revenues</td>
+                <td>Percentage of attendance</td>
+              </tr>
+
+
+              <tr>
+                <td>Categories</td>
+                <td>Revenues</td>
+                <td>Percentage of attendance</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
     </main>
+
+    <div class="footer-position">
+      <footer>
+        <div class="footer-logos">
+          <a href="https://www.instagram.com/"> <img src="./img/pngtree-instagram-icon-png-image_6315974.png" class="footer-logo" alt="instagram logo"> </a>
+         <a href="https://es-la.facebook.com/"> <img src="./img/facebook-logo-0.png" class="footer-logo" alt="facebook logo"> </a>
+         <a href="https://www.whatsapp.com/?lang=es"> <img src="./img/—Pngtree—whatsapp phone icon_8704826.png" class="footer-logo" alt="whatsapp logo"> </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./scripts/toggleMenu.js"></script>
+  </body>
+</html>
+
+

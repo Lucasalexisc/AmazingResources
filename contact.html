@@ -1,109 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Amazing Events</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <title>Contact Us</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <div>
-            <nav class="navbar">
-                <a href="./index.html" class="logo"><img src="./img/Logo Amazing Events.png" alt="Logo"></a>
-                <ul class="nav-links">
-                    <li><a href="./index.html" class="nav-box">Home</a></li>
-                    <li><a href="./upcomingevents.html" class="nav-box">Upcoming Events</a></li>
-                    <li><a href="./pastevents.html" class="nav-box">Past Events</a></li>
-                    <li><a href="#" class="nav-box">Contact</a></li>
-                    <li><a href="./stats.html" class="nav-box">Stats</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        
-        <div id="carouselExampleIndicators" class="carousel slide py-3 mx-2 shadow rounded bg-light" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#" class="carouselItem">
-                  <h3 class="text-center">Contact Us</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./upcomingevents.html" class="carouselItem">
-                  <h3 class="text-center">Upcoming Events</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./index.html" class="carouselItem">
-                  <h3 class="text-center">Home</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./stats.html" class="carouselItem">
-                  <h3 class="text-center">Stats</h3>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./pastevents.html" class="carouselItem">
-                  <h3 class="text-center">Past Events</h3>
-                </a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+  <header class="nav-header">
+    <figure class="figure-logo">
+      <a href="./index.html"> <img src="./img/Logo_AZ.jpg" class="logo" alt="logo amazing events"> </a>
+    </figure>
 
-        <form action="/action_page.php">
-            <div class="container">
+    <nav class="web-nav">
+      <a href="./index.html" class="nav-button">Home</a>
+      <a href="./future-events.html" class="nav-button">Future events</a>
+      <a href="./past-events.html" class="nav-button">Past Events</a>
+      <a href="#" class="nav-button">Contact</a>
+      <a href="./stats.html" class="nav-button">Stats</a>
+    </nav>
 
-                <hr>
+    <div class="container-menu">
+      <div class="menu-sign">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
 
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Name" name="name" id="name" required>
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./future-events.html">Future events</a>
+        <a href="./past-events.html">Past Events</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./stats.html">Stats</a>
+      </nav>
+    </div>
+  </header>
 
-                <label for="Mail"><b>Email</b></label>
-                <input type="Email" placeholder="email" name="Mail" id="Mail" required>
+  <main>
+    <section>
+      <header class="header-home">
+        <div class="next-prev-symbol"><a class="header-home-link" href="./past-events.html">&lt;</a></div>
+        <h1>Contact Us</h1>
+        <div class="next-prev-symbol"><a class="header-home-link" href="./stats.html">&gt;</a></div>
+      </header>
 
-                <label for="message"><b>Message</b></label>
-                <input type="text" placeholder="Message" name="message" id="message" required>
-                <hr>
+      <div class="display-flex-center">
+        <form>
+          <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="">
+          </fieldset>
 
+          <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="">
+          </fieldset>
 
-                <button type="submit" class="registerbtn">Submit</button>
-            </div>
+          <fieldset>
+            <label for="message">Message:</label>
+            <textarea rows="5" cols="33" id="message" name="message"></textarea>
+
+            <button type="submit" class="contact-button">Submit</button>
+          </fieldset>
 
         </form>
-        <footer>
-            <div class="foot">
-              <img src="./img/pngwing.com (2).png" alt="" height="50px" width="50px" HSPACE="20" VSPACE="20">
-              <img src="./img/pngwing.com (3).png" alt="" height="50px" width="50px" HSPACE="20" VSPACE="20">
-              <img src="./img/pngwing.com (4).png" alt="" height="50px" width="50px" HSPACE="20" VSPACE="20">
-            </div>
-          </footer>
-        
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    </main>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="footer-position">
+    <footer>
+      <div class="footer-logos">
+        <a href="https://www.instagram.com/"> <img src="./img/pngtree-instagram-icon-png-image_6315974.png" class="footer-logo" alt="instagram logo"> </a>
+        <a href="https://es-la.facebook.com/"> <img src="./img/facebook-logo-0.png" class="footer-logo" alt="facebook logo"> </a>
+        <a href="https://www.whatsapp.com/?lang=es"> <img src="./img/—Pngtree—whatsapp phone icon_8704826.png" class="footer-logo" alt="whatsapp logo"> </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/toggleMenu.js"></script>
+</body>
+
+</html>
